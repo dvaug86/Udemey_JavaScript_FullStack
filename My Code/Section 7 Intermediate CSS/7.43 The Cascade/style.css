@@ -18,7 +18,11 @@ div{
 #outer-box{
   border: 10px, solid, purple;
 }
-
+/* 
+From solution we could have just done this below
+#outer-box{
+  background-color: purple;
+} */
 .inner-box{
  background-color: red;
 }
