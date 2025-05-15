@@ -1,5 +1,6 @@
 /* Don't change the existing CSS. */
-
+/*remember the order they are placed is important. 
+if i had placed .box below the .inner-box all would be blue */
 .box {
   background-color: blue;
   padding: 10px;
@@ -11,11 +12,11 @@ p {
   padding: 0;
 }
 
-div{
+div {
   padding: 10px;
 }
 
-#outer-box{
+#outer-box {
   border: 10px, solid, purple;
 }
 /* 
@@ -23,10 +24,10 @@ From solution we could have just done this below
 #outer-box{
   background-color: purple;
 } */
-.inner-box{
- background-color: red;
+.inner-box {
+  background-color: red;
 }
 
-.white-text{
+.white-text {
   color: white;
 }
