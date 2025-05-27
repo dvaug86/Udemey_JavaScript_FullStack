@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -18,12 +17,82 @@
     For dimensions, see dimensions.png image.
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
+    
     */
-  </style>
-</head>
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+      .grid-container {
+        display: grid;
+        gap: 9px;
+        grid-template-rows: 414px 130px 155px 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+      }
+      .back-box{
+        background-color: black;
+        order:-1;
+        height: auto;
+        width: 748px;
+      }
+      .box {
+        color: orange;
+      }
+      .one {
+        background-color: red;
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      .two {
+        background-color: #f0f1ec;
+        grid-area: 1 / 2 / 2 / 5;
+      }
+      .three {
+        background-color: #f0f1ec;
+        grid-area: 2 / 1 / 4/ 2;
+      }
+      .four {
+        background-color: #f0f1ec;
+        grid-area: 2 / 2 / 4 /4;
+      }
+      .five {
+        border-bottom: 10px solid black;
+        background-color: #004592;
+        grid-area: 2/4 / 3/5;
+      }
+      .six {
+        background-color: #f0f1ec;
+        grid-area: 3/4 /5/5;
+      }
+      .seven {
+        background-color: #f0f1ec;
+      }
+      .eight {
+        background-color: #f9d01e;
+      }
+      .nine {
+        background-color: #232629;
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
-
+  <body>
+    <!-- Write your HTML here -->
+     <div class="flex-container">
+    <div class="back-box">
+      <div class="grid-container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>
+        <div class="box seven"></div>
+        <div class="box eight"></div>
+        <div class="box nine"></div>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>
