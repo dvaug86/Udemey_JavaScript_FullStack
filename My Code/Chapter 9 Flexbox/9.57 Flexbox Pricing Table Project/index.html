@@ -15,16 +15,31 @@
       .pricing-container {
         display: flex;
         flex: 1, 1, auto;
+        align-items: center; /* this is technically working it's just the container is the height of 
+                                  the items within.*/
+        justify-content: space-around;
+        /* how she did it:
+        display: flex;
+        justify-content: center
         align-items: center;
-        justify-content: center;
-        gap: 20px;
+        height: 100vh;
+        gap: 2rem;
+        */
       }
       .pricing-plan {
         display: flex;
         flex-direction: column;
         background-color: gray;
         width: 300px;
-        
+
+        /* how she did it:
+         flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius 5px;
+        text-align: center;
+        */
       }
       .pricing-plan > * {
         display: flex;
@@ -33,14 +48,20 @@
       }
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
-        .pricing-container{
+        .pricing-container {
           display: flex;
           flex-direction: column;
-        flex: 1, 1, auto;
-        align-content: center;
-        justify-content: center;
-        gap: 20px;
+          flex: 1, 1, auto;
+          align-content: center;
+          justify-content: center;
+          gap: 20px;
         }
+        /* .pricing-container{
+          flex-direction: column;
+          height:100%;
+          
+          need the 100% otherwise it will cutoff
+        } */
       }
     </style>
   </head>
