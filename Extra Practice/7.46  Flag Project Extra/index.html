@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <title>CSS Flag Project</title>
     <style>
+      /* /////////////////////////////////////////////////////////////////////////////////////////////// */
       /* Write your CSS Code here */
-      body {
+      /* body {
         display: flex;
         height: 100vh;
         justify-content: center;
@@ -31,7 +32,31 @@
         background-color: white;
         grid-area: 3 / 2 / 4 / 5;
         
-      }
+      } */
+      /* ///////////////////////////////////////////////////// */
+
+      .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      background-color: red;
+          }
+          .flag > div{
+            background-color: white;
+            height: 240px;
+            width: 80px;
+            position: absolute;
+            top: 180px;
+            left: 410px;
+          }
+             .flag > div > div{
+            background-color: white;
+            height: 80px;
+            width: 240px;
+            position: absolute;
+            top: 80px ;
+            left: -80px;
+          }
     </style>
   </head>
 
@@ -45,10 +70,20 @@ Hint 2: You can use CSS inspection to get the colors from
 https://appbrewery.github.io/flag-of-laos/
 -->
 
-  <body>
+  <!-- <body>
     <div class="flag">
       <div class="vert"></div>
       <div class="horiz"></div>
+    </div>
+  </body>
+</html> 
+-->
+
+  <body>
+    <div class="flag">
+      <div>
+        <div></div>
+      </div>
     </div>
   </body>
 </html>
